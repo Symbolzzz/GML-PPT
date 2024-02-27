@@ -1,0 +1,36 @@
+\begin{thebibliography}{}
+
+\bibitem[Chen and Wang, 2024]{chenSurvey3DGaussian2024}
+Chen, G. and Wang, W. (2024).
+\newblock A {{Survey}} on {{3D Gaussian Splatting}}.
+\newblock Comment: Ongoing project.
+
+\bibitem[Chen et~al., 2023]{chenTextto3DUsingGaussian2023}
+Chen, Z., Wang, F., and Liu, H. (2023).
+\newblock Text-to-{{3D}} using {{Gaussian Splatting}}.
+\newblock Comment: Project page: https://gsgen3d.github.io. Code: https://github.com/gsgen3d/gsgen.
+
+\bibitem[Ho et~al., 2020]{hoDenoisingDiffusionProbabilistic2020}
+Ho, J., Jain, A., and Abbeel, P. (2020).
+\newblock Denoising {{Diffusion Probabilistic Models}}.
+
+\bibitem[Nichol et~al., 2022]{nicholPointESystemGenerating2022}
+Nichol, A., Jun, H., Dhariwal, P., Mishkin, P., and Chen, M. (2022).
+\newblock Point-{{E}}: {{A System}} for {{Generating 3D Point Clouds}} from {{Complex Prompts}}.
+\newblock Comment: 8 pages, 11 figures.
+
+\bibitem[Poole et~al., 2022]{pooleDreamFusionTextto3DUsing2022}
+Poole, B., Jain, A., Barron, J.~T., and Mildenhall, B. (2022).
+\newblock {{DreamFusion}}: {{Text-to-3D}} using {{2D Diffusion}}.
+\newblock Comment: see project page at https://dreamfusion3d.github.io/.
+
+\bibitem[Rombach et~al., 2022]{rombachHighResolutionImageSynthesis2022}
+Rombach, R., Blattmann, A., Lorenz, D., Esser, P., and Ommer, B. (2022).
+\newblock High-{{Resolution Image Synthesis}} with {{Latent Diffusion Models}}.
+\newblock Comment: CVPR 2022.
+
+\bibitem[Sohl-Dickstein et~al., 2015]{sohl-dicksteinDeepUnsupervisedLearning2015}
+Sohl-Dickstein, J., Weiss, E.~A., Maheswaranathan, N., and Ganguli, S. (2015).
+\newblock Deep {{Unsupervised Learning}} using {{Nonequilibrium Thermodynamics}}.
+
+\end{thebibliography}

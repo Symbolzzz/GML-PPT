@@ -1,0 +1,202 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[dark]{sintefbeamer}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+
+% \usepackage{natbib}
+% meta-data
+\title{TEXT-TO-3D}
+\subtitle{AI-Generated Content}
+\author{Enyun Xuan}
+\date{2024 年 2 月 27 日}
+\titlebackground{images/background}
+
+% document body
+\setbeamertemplate{bibliography item}{}
+% \bibliographystyle{apalike} % 这个样式支持作者-年份格式
+\setbeamertemplate{footline}[frame number]
+\begin{document}
+
+\maketitle
+
+\begin{frame}{近期工作}
+  \framesubtitle{2.19-2.26}
+
+  近期学习了\cite{chenSurvey3DGaussian2024}这篇综述中，对于3DGS在AI-Generated Content(AIGC)领域中的Text-to-3D。
+
+  \begin{itemize}
+    \item 扩散模型（Diffusion Model）
+    \item 生成模型（Generated Model）
+  \end{itemize}
+
+\end{frame}
+
+\section{AI-Generated Content (AIGC)}
+
+\begin{frame}[fragile]{Diffusion Model}{\thesection \, \secname}
+
+  根据热力学的扩散原理，\cite{sohl-dicksteinDeepUnsupervisedLearning2015}、\cite{hoDenoisingDiffusionProbabilistic2020}提出了新的生成模型——扩散模型（Diffusion Model）。
+
+  \begin{figure}
+    \includegraphics[width=0.8\textwidth]{../storage/89FWG783/image.png}
+      \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Diffusion Model}{\thesection \, \secname}
+
+  \begin{figure}
+    \includegraphics[width=\textwidth]{../storage/8YGCTKD7/image.png}
+      \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Stable Diffusion}{\thesection \, \secname}
+
+  Stable Diffusion\cite{rombachHighResolutionImageSynthesis2022}模型是AIGC领域的重要成果，可以根据TEXT来生成内容。
+
+  \begin{figure}
+    \includegraphics[width=0.8\textwidth]{../storage/AMR4HR56/image.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Stable Diffusion}
+
+  在训练过程中加入了\textcolor{red}{Condition}。
+
+  \begin{figure}
+    \includegraphics[width=0.8\textwidth]{../storage/3GPT8PCS/image.png}
+  \end{figure}
+
+\end{frame}
+
+\section{TEXT-TO-3D}
+
+\begin{frame}[fragile]{DreamFusion}
+
+DreamFusion\cite{pooleDreamFusionTextto3DUsing2022}仅使用2D图片生成3D模型。
+
+    \begin{figure}
+      \includegraphics[width=0.9\textwidth]{../storage/G7NK7YVD/image.png}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Score Distillation Sampling}
+
+  在\textcolor{red}{Parameter space}进行取样，而不是Pixel space。
+
+  \begin{figure}
+    \includegraphics[width=\textwidth]{../storage/8D2ZNU77/image.png}
+  \end{figure}
+
+  与NeRF相结合的桥梁。
+
+\end{frame}
+
+\begin{frame}[fragile]{DreamFusion}
+
+  DreamFusion的贡献：
+  
+  \begin{itemize}
+    \item 仅使用2D数据集；
+    \item 结合Mip-NeRF；
+    \item 分数蒸馏取样——SCORE DISTILLATION SAMPLING(SDS)
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{DreamFusion}
+
+  出现的问题：
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item 训练时间长；
+        \item Janus Problem
+      \end{itemize}
+    \end{column}
+  
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{../storage/PPFED733/image.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+  
+\end{frame}
+
+\begin{frame}[fragile]{GSGEN}
+
+  GSGEN\cite{chenTextto3DUsingGaussian2023}用3DGS替换NeRF，达到了新的SOTA。
+
+  \begin{figure}
+    \includegraphics[width=\textwidth]{../storage/5HQH6LIT/image.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{GSGEN}
+
+  克服了隐式表达中几何形状坍塌的问题。
+
+  \begin{figure}
+    \includegraphics[width=\textwidth]{../storage/DK67IDUV/image.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{Text-to-PointCloud}
+
+  Point-E\cite{nicholPointESystemGenerating2022}从prompt生成点云，作为3D prior。
+
+  \begin{figure}
+    \includegraphics[width=\textwidth]{../storage/XGI4B68J/image.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{Compactness-based Densification}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      保证几何结构。
+      \begin{itemize}
+        \item 删减高丝球
+        \item 插入高丝球
+      \end{itemize}
+  
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{../storage/RA95MT87/image.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Plan}
+  
+  后续计划：
+
+  \begin{itemize}
+    \item 阅读并理解以上内容的数学推导；
+    \item 运行开源代码；
+    \item 挖掘改进空间。
+  \end{itemize}
+ 
+\end{frame}
+
+\backmatter
+
+\begin{frame}[t, allowframebreaks]{References}{\,}
+\framesubtitle{\quad}
+\tiny
+  \bibliographystyle{apalike}
+  \bibliography{references}
+\end{frame}
+
+
+\end{document}

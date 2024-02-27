@@ -1,0 +1,280 @@
+@online{chenSurvey3DGaussian2024,
+  title = {A {{Survey}} on {{3D Gaussian Splatting}}},
+  author = {Chen, Guikun and Wang, Wenguan},
+  date = {2024-01-08},
+  eprint = {2401.03890},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2401.03890},
+  urldate = {2024-01-16},
+  abstract = {3D Gaussian splatting (3D GS) has recently emerged as a transformative technique in the explicit radiance field and computer graphics landscape. This innovative approach, characterized by the utilization of millions of 3D Gaussians, represents a significant departure from the neural radiance field (NeRF) methodologies, which predominantly use implicit, coordinate-based models to map spatial coordinates to pixel values. 3D GS, with its explicit scene representations and differentiable rendering algorithms, not only promises real-time rendering capabilities but also introduces unprecedented levels of control and editability. This positions 3D GS as a potential game-changer for the next generation of 3D reconstruction and representation. In the present paper, we provide the first systematic overview of the recent developments and critical contributions in the domain of 3D GS. We begin with a detailed exploration of the underlying principles and the driving forces behind the advent of 3D GS, setting the stage for understanding its significance. A focal point of our discussion is the practical applicability of 3D GS. By facilitating real-time performance, 3D GS opens up a plethora of applications, ranging from virtual reality to interactive media and beyond. This is complemented by a comparative analysis of leading 3D GS models, evaluated across various benchmark tasks to highlight their performance and practical utility. The survey concludes by identifying current challenges and suggesting potential avenues for future research in this domain. Through this survey, we aim to provide a valuable resource for both newcomers and seasoned researchers, fostering further exploration and advancement in applicable and explicit radiance field representation.},
+  pubstate = {preprint},
+  version = {1},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Multimedia,survey},
+  note = {Comment: Ongoing project},
+  file = {/Users/xuanenyun/Zotero/storage/E3YBKX67/Chen 和 Wang - 2024 - A Survey on 3D Gaussian Splatting.pdf;/Users/xuanenyun/Zotero/storage/QHJKSYRJ/2401.html}
+}
+
+@online{chenTextto3DUsingGaussian2023,
+  title = {Text-to-{{3D}} Using {{Gaussian Splatting}}},
+  author = {Chen, Zilong and Wang, Feng and Liu, Huaping},
+  date = {2023-10-30},
+  eprint = {2309.16585},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2309.16585},
+  urldate = {2024-02-22},
+  abstract = {In this paper, we present Gaussian Splatting based text-to-3D generation (GSGEN), a novel approach for generating high-quality 3D objects. Previous methods suffer from inaccurate geometry and limited fidelity due to the absence of 3D prior and proper representation. We leverage 3D Gaussian Splatting, a recent state-of-the-art representation, to address existing shortcomings by exploiting the explicit nature that enables the incorporation of 3D prior. Specifically, our method adopts a progressive optimization strategy, which includes a geometry optimization stage and an appearance refinement stage. In geometry optimization, a coarse representation is established under a 3D geometry prior along with the ordinary 2D SDS loss, ensuring a sensible and 3D-consistent rough shape. Subsequently, the obtained Gaussians undergo an iterative refinement to enrich details. In this stage, we increase the number of Gaussians by compactness-based densification to enhance continuity and improve fidelity. With these designs, our approach can generate 3D content with delicate details and more accurate geometry. Extensive evaluations demonstrate the effectiveness of our method, especially for capturing high-frequency components. Our code is available at https://github.com/gsgen3d/gsgen/.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  note = {Comment: Project page: https://gsgen3d.github.io. Code: https://github.com/gsgen3d/gsgen},
+  file = {/Users/xuanenyun/Zotero/storage/43S723BM/Chen 等 - 2023 - Text-to-3D using Gaussian Splatting.pdf}
+}
+
+@online{hoDenoisingDiffusionProbabilistic2020,
+  title = {Denoising {{Diffusion Probabilistic Models}}},
+  author = {Ho, Jonathan and Jain, Ajay and Abbeel, Pieter},
+  date = {2020-12-16},
+  eprint = {2006.11239},
+  eprinttype = {arxiv},
+  eprintclass = {cs, stat},
+  url = {http://arxiv.org/abs/2006.11239},
+  urldate = {2024-02-25},
+  abstract = {We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at https://github.com/hojonathanho/diffusion},
+  pubstate = {preprint},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/xuanenyun/Zotero/storage/2TDMZNVC/Ho 等 - 2020 - Denoising Diffusion Probabilistic Models.pdf}
+}
+
+@online{kerbl3DGaussianSplatting2023,
+  title = {{{3D Gaussian Splatting}} for {{Real-Time Radiance Field Rendering}}},
+  author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkühler, Thomas and Drettakis, George},
+  date = {2023-08-08},
+  eprint = {2308.04079},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2308.04079},
+  urldate = {2024-01-15},
+  abstract = {Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates. We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time ({$>$}= 30 fps) novel-view synthesis at 1080p resolution. First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space; Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene; Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics},
+  note = {\section{注释\\
+(2024/1/18 下午1:28:48)}
+
+\par
+“Similarly, the most efficient radiance field solutions to date build on continuous representations by interpolating values stored in, e.g., voxel [Fridovich-Keil and Yu et al. 2022] or hash [Müller et al. 2022] grids or points [Xu et al. 2022].\\
+🔤类似地，迄今为止最有效的辐射场解决方案通过对存储在体素等中的值进行插值来构建连续表示[Fridovich-Keil 和 Yu 等人。 2022] 或哈希 [Müller 等人。 2022]网格或点[Xu等人。 2022]。🔤” (Kerbl 等, 2023, p. 11)
+\par
+“We first introduce 3D Gaussians as a flexible and expressive scene representation.\\
+🔤我们首先引入3D Gaussian作为一种灵活且具有表达能力的场景表示。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“We start with the same input as previous NeRF-like methods, i.e., cameras calibrated with Structure-from-Motion (SfM) [Snavely et al. 2006] and initialize the set of 3D Gaussians with the sparse point cloud produced for free as part of the SfM process.\\
+🔤我们从与先前的NeRF - like方法相同的输入开始，即使用运动恢复结构( Structure-from- Motion，SfM ) [斯内夫利等2006]对相机进行标定，并使用免费生成的稀疏点云初始化三维高斯点集作为SfM过程的一部分。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“In contrast to most point-based solutions that require Multi-View Stereo (MVS) data [Aliev et al. 2020; Kopanas et al. 2021; Rückert et al. 2022], we achieve high-quality results with only SfM points as input.\\
+🔤与大多数基于点的解决方案需要多视立体( Multi-View Stereo，MVS )数据[ Aliev et al 2020 ; Kopanas et al 2021 ;吕克特et al 2022]不同，我们仅使用SfM点作为输入就可以获得高质量的结果。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“We show that 3D Gaussians are an excellent choice, since they are a differentiable volumetric representation, but they can also be rasterized very efficiently by projecting them to 2D, and applying standard 𝛼-blending, using an equivalent image formation model as NeRF.\\
+🔤我们表明3D高斯是一个很好的选择，因为它们是一个可微的体积表示，但是通过将它们投影到2D，并应用标准的α混合，使用等效的图像形成模型NeRF，它们也可以非常有效地栅格化。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“The second component of our method is optimization of the properties of the 3D Gaussians – 3D position, opacity 𝛼, anisotropic covariance, and spherical harmonic (SH) coefficients – interleaved with adaptive density control steps, where we add and occasionally remove 3D Gaussians during optimization.\\
+🔤我们方法的第二个组成部分是优化三维高斯的性质- -三维位置、不透明度α、各向异性协方差和球谐( SH )系数- -与自适应密度控制步骤交织在一起，我们在优化过程中添加和偶尔删除三维高斯。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“The third and final element of our method is our real-time rendering solution that uses fast GPU sorting algorithms and is inspired by tile-based rasterization, following recent work [Lassner and Zollhofer 2021].\\
+🔤我们方法的第三个也是最后一个元素是我们的实时渲染解决方案，它使用了快速的GPU排序算法，并受到基于瓦片的栅格化的启发，这是在最近的工作[拉斯纳和Zollhofer 2021]之后。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“The introduction of anisotropic 3D Gaussians as a high-quality, unstructured representation of radiance fields. • An optimization method of 3D Gaussian properties, interleaved with adaptive density control that creates high-quality representations for captured scenes. • A fast, differentiable rendering approach for the GPU, which is visibility-aware, allows anisotropic splatting and fast backpropagation to achieve high-quality novel view synthesis.\\
+🔤引入各向异性3D高斯作为辐射场的高质量、非结构化表示。·一种3D高斯特性的优化方法，与自适应密度控制交织在一起，为捕获的场景创建高质量的表示。·一种可视性感知的GPU快速、可微的渲染方法，允许各向异性散射和快速反向传播，以实现高质量的新视角合成。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“For complete coverage of the field, please see the excellent recent surveys [Tewari et al. 2022; Xie et al. 2022].\\
+🔤为全面覆盖该领域，请参阅近期优秀调查[ Tewari et al 2022 ; Xie et al 2022]。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“The advent of Structure-from-Motion (SfM) [Snavely et al. 2006] enabled an entire new domain where a collection of photos could be used to synthesize novel views\\
+🔤运动恢复结构( Structure-from-motion，SfM ) [斯内夫利等2006]的出现使一个全新的领域成为可能，在这个领域中，照片的集合可以用来合成新的视图🔤” (Kerbl 等, 2023, p. 12)
+\par
+“the current state-of-the-art in image quality for novel-view synthesis is Mip-NeRF360 [Barron et al. 2022].\\
+🔤目前，用于新视点合成的图像质量最好的是Mip - NeRF360 [ Barron et al 2022]。🔤” (Kerbl 等, 2023, p. 12)
+\par
+“In addition, image quality is limited in large part by the choice of the structured grids used for acceleration, and rendering speed is hindered by the need to query many samples for a given ray-marching step.\\
+🔤此外，图像质量在很大程度上受限于用于加速的结构化网格的选择，绘制速度也因需要查询给定射线移动步的多个样本而受到阻碍。🔤” (Kerbl 等, 2023, p. 13)
+\par
+“While true to the underlying data, point sample rendering suffers from holes, causes aliasing, and is strictly discontinuous.\\
+🔤而对于底层数据来说，点样本渲染会产生空洞，导致走样，并且是严格不连续的。🔤” (Kerbl 等, 2023, p. 13)
+\par
+“Seminal work on high-quality point-based rendering addresses these issues by “splatting” point primitives with an extent larger than a pixel, e.g., circular or elliptic discs, ellipsoids, or surfels [Botsch et al. 2005; Pfister et al. 2000; Ren et al. 2002; Zwicker et al. 2001b].\\
+🔤高质量的基于点绘制的后续工作通过"飞溅"程度大于一个像素的点基元来解决这些问题，例如圆形或椭圆形的圆盘、椭球或面元[ Botsch et al 2005 ;菲斯特et al 2000 ; Ren et al 2002 ;茨维克尔et al 2001b]。🔤” (Kerbl 等, 2023, p. 13)
+\par
+(Kerbl 等, 2023, p. 13)
+\par
+(Kerbl 等, 2023, p. 13)
+\par
+“NeRFs are a continuous representation implicitly representing empty/occupied space; expensive random sampling is required to find the samples in Eq. 2 with consequent noise and computational expense.\\
+🔤NeRFs是一种隐含地表征空/被占用空间的连续表征；为了找到方程中的样本，需要进行昂贵的随机抽样。2，伴随着噪声和计算成本。🔤” (Kerbl 等, 2023, p. 13)
+\par
+“Our rasterization respects visibility order in contrast to their order-independent method.\\
+🔤与它们的顺序无关方法不同，我们的栅格化尊重可见性顺序。🔤” (Kerbl 等, 2023, p. 13)
+\par
+“We use 3D Gaussians for a more flexible scene representation, avoiding the need for MVS geometry and achieving real-time rendering thanks to our tile-based rendering algorithm for the projected Gaussians.\\
+🔤我们使用3D高斯进行更灵活的场景表示，避免了对MVS几何的需要，并且由于我们基于瓦片的投影高斯渲染算法，实现了实时渲染。🔤” (Kerbl 等, 2023, p. 13)
+\par
+“From these points we create a set of 3D Gaussians (Sec. 4), defined by a position (mean), covariance matrix and opacity 𝛼, that allows a very flexible optimization regime\\
+🔤从这些点出发，我们创建了一组三维高斯(第4节)，由位置(均值)、协方差矩阵和不透明度α定义，允许非常灵活的优化机制🔤” (Kerbl 等, 2023, p. 14)
+\par
+“The directional appearance component (color) of the radiance field is represented via spherical harmonics (SH)\\
+🔤辐射场的方向外观分量(颜色)用球谐函数( SH )表示。🔤” (Kerbl 等, 2023, p. 14)
+\par
+“Our Gaussians are defined by a full 3D covariance matrix Σ defined in world space [Zwicker et al. 2001a] centered at point (mean) 𝜇\\
+🔤我们的高斯由定义在世界空间[茨维克尔等2001a]中以点(均值) μ为中心的全三维协方差矩阵Σ定义🔤” (Kerbl 等, 2023, p. 14)
+\par
+(Kerbl 等, 2023, p. 14)
+\par
+“Given a viewing transformation 𝑊 the covariance matrix Σ′ in camera coordinates is given as follows:\\
+🔤给定一个观测变换W，相机坐标下的协方差矩阵Σ′为🔤” (Kerbl 等, 2023, p. 14)
+\par
+(Kerbl 等, 2023, p. 14)
+\par
+“The core of our approach is the optimization step, which creates a dense set of 3D Gaussians accurately representing the scene for free-view synthesis.\\
+🔤我们方法的核心是优化步骤，该步骤创建了一个稠密的3D高斯集合，准确地表示了自由视图合成的场景。🔤” (Kerbl 等, 2023, p. 14)
+\par
+(Kerbl 等, 2023, p. 15)
+\par
+(Kerbl 等, 2023, p. 23)
+\par
+(Kerbl 等, 2023, p. 24)
+\par
+Comment: https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/},
+  file = {/Users/xuanenyun/Zotero/storage/ALZIBKB6/Kerbl 等 - 2023 - 3D Gaussian Splatting for Real-Time Radiance Field.pdf}
+}
+
+@inproceedings{linMagic3DHighResolutionTextto3D2023,
+  title = {{{Magic3D}}: {{High-Resolution Text-to-3D Content Creation}}},
+  shorttitle = {{{Magic3D}}},
+  booktitle = {2023 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  author = {Lin, Chen-Hsuan and Gao, Jun and Tang, Luming and Takikawa, Towaki and Zeng, Xiaohui and Huang, Xun and Kreis, Karsten and Fidler, Sanja and Liu, Ming-Yu and Lin, Tsung-Yi},
+  date = {2023-06},
+  pages = {300--309},
+  publisher = {{IEEE}},
+  location = {{Vancouver, BC, Canada}},
+  doi = {10.1109/CVPR52729.2023.00037},
+  url = {https://ieeexplore.ieee.org/document/10203601/},
+  urldate = {2024-02-25},
+  eventtitle = {2023 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
+  isbn = {9798350301298},
+  file = {/Users/xuanenyun/Zotero/storage/VRTTJBAR/Lin 等 - 2023 - Magic3D High-Resolution Text-to-3D Content Creati.pdf}
+}
+
+@online{nicholPointESystemGenerating2022,
+  title = {Point-{{E}}: {{A System}} for {{Generating 3D Point Clouds}} from {{Complex Prompts}}},
+  shorttitle = {Point-{{E}}},
+  author = {Nichol, Alex and Jun, Heewoo and Dhariwal, Prafulla and Mishkin, Pamela and Chen, Mark},
+  date = {2022-12-16},
+  eprint = {2212.08751},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2212.08751},
+  urldate = {2024-02-25},
+  abstract = {While recent work on text-conditional 3D object generation has shown promising results, the state-of-the-art methods typically require multiple GPU-hours to produce a single sample. This is in stark contrast to state-of-the-art generative image models, which produce samples in a number of seconds or minutes. In this paper, we explore an alternative method for 3D object generation which produces 3D models in only 1-2 minutes on a single GPU. Our method first generates a single synthetic view using a text-to-image diffusion model, and then produces a 3D point cloud using a second diffusion model which conditions on the generated image. While our method still falls short of the state-of-the-art in terms of sample quality, it is one to two orders of magnitude faster to sample from, offering a practical trade-off for some use cases. We release our pre-trained point cloud diffusion models, as well as evaluation code and models, at https: //github.com/openai/point-e. virtual reality, gaming, and industrial design.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  note = {Comment: 8 pages, 11 figures},
+  file = {/Users/xuanenyun/Zotero/storage/DDHXP49Q/Nichol 等 - 2022 - Point-E A System for Generating 3D Point Clouds f.pdf}
+}
+
+@online{niedermayrCompressed3DGaussian2024,
+  title = {Compressed {{3D Gaussian Splatting}} for {{Accelerated Novel View Synthesis}}},
+  author = {Niedermayr, Simon and Stumpfegger, Josef and Westermann, Rüdiger},
+  date = {2024-01-22},
+  eprint = {2401.02436},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2401.02436},
+  urldate = {2024-02-22},
+  abstract = {Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat representation has been introduced for novel view synthesis from sparse image sets. Making such representations suitable for applications like network streaming and rendering on low-power devices requires significantly reduced memory consumption as well as improved rendering efficiency. We propose a compressed 3D Gaussian splat representation that utilizes sensitivityaware vector clustering with quantization-aware training to compress directional colors and Gaussian parameters. The learned codebooks have low bitrates and achieve a compression rate of up to 31× on real-world scenes with only minimal degradation of visual quality. We demonstrate that the compressed splat representation can be efficiently rendered with hardware rasterization on lightweight GPUs at up to 4× higher framerates than reported via an optimized GPU compute pipeline. Extensive experiments across multiple datasets demonstrate the robustness and rendering speed of the proposed approach.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics},
+  file = {/Users/xuanenyun/Zotero/storage/S6CBPSNJ/Niedermayr 等 - 2024 - Compressed 3D Gaussian Splatting for Accelerated N.pdf}
+}
+
+@online{pooleDreamFusionTextto3DUsing2022,
+  title = {{{DreamFusion}}: {{Text-to-3D}} Using {{2D Diffusion}}},
+  shorttitle = {{{DreamFusion}}},
+  author = {Poole, Ben and Jain, Ajay and Barron, Jonathan T. and Mildenhall, Ben},
+  date = {2022-09-29},
+  eprint = {2209.14988},
+  eprinttype = {arxiv},
+  eprintclass = {cs, stat},
+  url = {http://arxiv.org/abs/2209.14988},
+  urldate = {2024-02-25},
+  abstract = {Recent breakthroughs in text-to-image synthesis have been driven by diffusion models trained on billions of image-text pairs. Adapting this approach to 3D synthesis would require large-scale datasets of labeled 3D data and efficient architectures for denoising 3D data, neither of which currently exist. In this work, we circumvent these limitations by using a pretrained 2D text-to-image diffusion model to perform text-to-3D synthesis. We introduce a loss based on probability density distillation that enables the use of a 2D diffusion model as a prior for optimization of a parametric image generator. Using this loss in a DeepDream-like procedure, we optimize a randomly-initialized 3D model (a Neural Radiance Field, or NeRF) via gradient descent such that its 2D renderings from random angles achieve a low loss. The resulting 3D model of the given text can be viewed from any angle, relit by arbitrary illumination, or composited into any 3D environment. Our approach requires no 3D training data and no modifications to the image diffusion model, demonstrating the effectiveness of pretrained image diffusion models as priors. See dreamfusion3d.github.io for a more immersive view into our 3D results.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {Comment: see project page at https://dreamfusion3d.github.io/},
+  file = {/Users/xuanenyun/Zotero/storage/RY2CBKTI/Poole 等 - 2022 - DreamFusion Text-to-3D using 2D Diffusion.pdf}
+}
+
+@online{rombachHighResolutionImageSynthesis2022,
+  title = {High-{{Resolution Image Synthesis}} with {{Latent Diffusion Models}}},
+  author = {Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Björn},
+  date = {2022-04-13},
+  eprint = {2112.10752},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2112.10752},
+  urldate = {2024-02-25},
+  abstract = {By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential evaluations. To enable DM training on limited computational resources while retaining their quality and flexibility, we apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion models on such a representation allows for the first time to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity. By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text or bounding boxes and high-resolution synthesis becomes possible in a convolutional manner. Our latent diffusion models (LDMs) achieve a new state of the art for image inpainting and highly competitive performance on various tasks, including unconditional image generation, semantic scene synthesis, and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs. Code is available at https://github.com/CompVis/latent-diffusion .},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  note = {Comment: CVPR 2022},
+  file = {/Users/xuanenyun/Zotero/storage/UUCC98U3/Rombach 等 - 2022 - High-Resolution Image Synthesis with Latent Diffus.pdf}
+}
+
+@online{sahariaPhotorealisticTexttoImageDiffusion2022,
+  title = {Photorealistic {{Text-to-Image Diffusion Models}} with {{Deep Language Understanding}}},
+  author = {Saharia, Chitwan and Chan, William and Saxena, Saurabh and Li, Lala and Whang, Jay and Denton, Emily and Ghasemipour, Seyed Kamyar Seyed and Ayan, Burcu Karagol and Mahdavi, S. Sara and Lopes, Rapha Gontijo and Salimans, Tim and Ho, Jonathan and Fleet, David J. and Norouzi, Mohammad},
+  date = {2022-05-23},
+  eprint = {2205.11487},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2205.11487},
+  urldate = {2024-02-26},
+  abstract = {We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
+}
+
+@online{WoZhengLiLiaoJin300PianWenXianXieLiaoYiPianSCIWenXianZongShuZhiHu,
+  title = {我整理了近300篇文献，{{写了一篇SCI文献综述}} - 知乎},
+  url = {https://zhuanlan.zhihu.com/p/336779180},
+  urldate = {2024-01-22},
+  file = {/Users/xuanenyun/Zotero/storage/CXBGPPHX/336779180.html}
+}
+
+@article{yangGaussianObjectJustTaking,
+  title = {{{GaussianObject}}: {{Just Taking Four Images}} to {{Get A High-Quality 3D Object}} with {{Gaussian Splatting}}},
+  author = {Yang, Chen and Li, Sikuang and Fang, Jiemin and Liang, Ruofan and Xie, Lingxi and Zhang, Xiaopeng and Shen, Wei and Tian, Qi},
+  langid = {english},
+  file = {/Users/xuanenyun/Zotero/storage/ZG5SCBKW/Yang 等 - GaussianObject Just Taking Four Images to Get A H.pdf}
+}
+
+@online{zhouGALA3DTextto3DComplex2024,
+  title = {{{GALA3D}}: {{Towards Text-to-3D Complex Scene Generation}} via {{Layout-guided Generative Gaussian Splatting}}},
+  shorttitle = {{{GALA3D}}},
+  author = {Zhou, Xiaoyu and Ran, Xingjian and Xiong, Yajiao and He, Jinlin and Lin, Zhiwei and Wang, Yongtao and Sun, Deqing and Yang, Ming-Hsuan},
+  date = {2024-02-11},
+  eprint = {2402.07207},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2402.07207},
+  urldate = {2024-02-22},
+  abstract = {We present GALA3D, generative 3D GAussians with LAyout-guided control, for effective compositional text-to-3D generation. We first utilize large language models (LLMs) to generate the initial layout and introduce a layout-guided 3D Gaussian representation for 3D content generation with adaptive geometric constraints. We then propose an object-scene compositional optimization mechanism with conditioned diffusion to collaboratively generate realistic 3D scenes with consistent geometry, texture, scale, and accurate interactions among multiple objects while simultaneously adjusting the coarse layout priors extracted from the LLMs to align with the generated scene. Experiments show that GALA3D is a user-friendly, end-to-end framework for state-of-the-art scene-level 3D content generation and controllable editing while ensuring the high fidelity of object-level entities within the scene. Source codes and models will be available at https://gala3d.github.io/.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/xuanenyun/Zotero/storage/S6ETSFED/Zhou 等 - 2024 - GALA3D Towards Text-to-3D Complex Scene Generatio.pdf}
+}
