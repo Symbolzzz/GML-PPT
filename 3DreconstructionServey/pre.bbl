@@ -1,0 +1,129 @@
+\begin{thebibliography}{}
+
+\bibitem[Barron et~al., 2021]{barronMipNeRFMultiscaleRepresentation}
+Barron, J.~T., Mildenhall, B., Tancik, M., Hedman, P., Martin-Brualla, R., and Srinivasan, P.~P. (2021).
+\newblock Mip-{{NeRF}}: {{A Multiscale Representation}} for {{Anti-Aliasing Neural Radiance Fields Supplemental Material}}.
+
+\bibitem[Barron et~al., 2022]{barronMipNeRF360Unbounded2022}
+Barron, J.~T., Mildenhall, B., Verbin, D., Srinivasan, P.~P., and Hedman, P. (2022).
+\newblock Mip-{{NeRF}} 360: {{Unbounded Anti-Aliased Neural Radiance Fields}}.
+\newblock In {\em 2022 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 5460--5469. {IEEE}.
+
+\bibitem[Chen et~al., 2021]{chenMVSNeRFFastGeneralizable2021}
+Chen, A., Xu, Z., Zhao, F., Zhang, X., Xiang, F., Yu, J., and Su, H. (2021).
+\newblock {{MVSNeRF}}: {{Fast Generalizable Radiance Field Reconstruction}} from {{Multi-View Stereo}}.
+\newblock In {\em 2021 {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}} ({{ICCV}})}, pages 14104--14113. {IEEE}.
+
+\bibitem[Deng et~al., 2022]{dengDepthsupervisedNeRFFewer2022}
+Deng, K., Liu, A., Zhu, J.-Y., and Ramanan, D. (2022).
+\newblock Depth-supervised {{NeRF}}: {{Fewer Views}} and {{Faster Training}} for {{Free}}.
+\newblock In {\em 2022 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 12872--12881. {IEEE}.
+
+\bibitem[Eigen et~al., 2014]{eigenDepthMapPrediction}
+Eigen, D., Puhrsch, C., and Fergus, R. (2014).
+\newblock Depth {{Map Prediction}} from a {{Single Image}} using a {{Multi-Scale Deep Network}}.
+
+\bibitem[El~Banani et~al., 2020]{elbananiNovelObjectViewpoint2020}
+El~Banani, M., Corso, J.~J., and Fouhey, D.~F. (2020).
+\newblock Novel {{Object Viewpoint Estimation Through Reconstruction Alignment}}.
+\newblock In {\em 2020 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 3110--3119. {IEEE}.
+
+\bibitem[Fan et~al., 2016]{fanPointSetGeneration2016}
+Fan, H., Su, H., and Guibas, L. (2016).
+\newblock A {{Point Set Generation Network}} for {{3D Object Reconstruction}} from a {{Single Image}}.
+
+\bibitem[Furukawa and Hernández, 2015]{furukawaMultiviewStereoTutorial2015}
+Furukawa, Y. and Hernández, C. (2015).
+\newblock {\em Multi-View Stereo: A Tutorial}.
+\newblock Number 9,1/2 in Foundation and Trends in Computer Graphics and Vision. {Now}.
+
+\bibitem[Geng, 2011]{gengStructuredlight3DSurface2011}
+Geng, J. (2011).
+\newblock Structured-light {{3D}} surface imaging: A tutorial.
+\newblock 3(2):128.
+
+\bibitem[Groueix et~al., 2018]{groueixAtlasNetPapierMAch2018a}
+Groueix, T., Fisher, M., Kim, V.~G., Russell, B.~C., and Aubry, M. (2018).
+\newblock {{AtlasNet}}: {{A Papier-M}}\textbackslash\^ach\textbackslash 'e {{Approach}} to {{Learning 3D Surface Generation}}.
+
+\bibitem[Hamzah and Ibrahim, 2016]{hamzahLiteratureSurveyStereo2016}
+Hamzah, R.~A. and Ibrahim, H. (2016).
+\newblock Literature {{Survey}} on {{Stereo Vision Disparity Map Algorithms}}.
+\newblock 2016:1--23.
+
+\bibitem[Kerbl et~al., 2023]{kerbl3DGaussianSplatting2023}
+Kerbl, B., Kopanas, G., Leimkühler, T., and Drettakis, G. (2023).
+\newblock {{3D Gaussian Splatting}} for {{Real-Time Radiance Field Rendering}}.
+
+\bibitem[Martin-Brualla et~al., 2021]{martin-bruallaNeRFWildNeural2021}
+Martin-Brualla, R., Radwan, N., Sajjadi, M. S.~M., Barron, J.~T., Dosovitskiy, A., and Duckworth, D. (2021).
+\newblock {{NeRF}} in the {{Wild}}: {{Neural Radiance Fields}} for {{Unconstrained Photo Collections}}.
+\newblock In {\em 2021 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 7206--7215. {IEEE}.
+
+\bibitem[Mescheder et~al., 2019]{meschederOccupancyNetworksLearning2019}
+Mescheder, L., Oechsle, M., Niemeyer, M., Nowozin, S., and Geiger, A. (2019).
+\newblock Occupancy {{Networks}}: {{Learning 3D Reconstruction}} in {{Function Space}}.
+\newblock In {\em 2019 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 4455--4465. {IEEE}.
+
+\bibitem[Mildenhall et~al., 2020]{mildenhallNeRFRepresentingScenes2020}
+Mildenhall, B., Srinivasan, P.~P., Tancik, M., Barron, J.~T., Ramamoorthi, R., and Ng, R. (2020).
+\newblock {{NeRF}}: {{Representing Scenes}} as {{Neural Radiance Fields}} for {{View Synthesis}}.
+
+\bibitem[Müller et~al., 2022]{mullerInstantNeuralGraphics2022}
+Müller, T., Evans, A., Schied, C., and Keller, A. (2022).
+\newblock Instant {{Neural Graphics Primitives}} with a {{Multiresolution Hash Encoding}}.
+\newblock 41(4):1--15.
+
+\bibitem[Park et~al., 2023]{parkCamPCameraPreconditioning2023}
+Park, K., Henzler, P., Mildenhall, B., Barron, J.~T., and Martin-Brualla, R. (2023).
+\newblock {{CamP}}: {{Camera Preconditioning}} for {{Neural Radiance Fields}}.
+
+\bibitem[Schonberger and Frahm, 2016]{schonbergerStructurefromMotionRevisited2016}
+Schonberger, J.~L. and Frahm, J.-M. (2016).
+\newblock Structure-from-{{Motion Revisited}}.
+\newblock In {\em 2016 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 4104--4113. {IEEE}.
+
+\bibitem[Seitz et~al., 2006]{seitzComparisonEvaluationMultiView2006}
+Seitz, S., Curless, B., Diebel, J., Scharstein, D., and Szeliski, R. (2006).
+\newblock A {{Comparison}} and {{Evaluation}} of {{Multi-View Stereo Reconstruction Algorithms}}.
+\newblock In {\em 2006 {{IEEE Computer Society Conference}} on {{Computer Vision}} and {{Pattern Recognition}} - {{Volume}} 1 ({{CVPR}}'06)}, volume~1, pages 519--528. {IEEE}.
+
+\bibitem[Tancik et~al., 2022]{tancikBlockNeRFScalableLarge2022}
+Tancik, M., Casser, V., Yan, X., Pradhan, S., Mildenhall, B.~P., Srinivasan, P., Barron, J.~T., and Kretzschmar, H. (2022).
+\newblock Block-{{NeRF}}: {{Scalable Large Scene Neural View Synthesis}}.
+\newblock In {\em 2022 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 8238--8248. {IEEE}.
+
+\bibitem[Turki et~al., 2022]{turkiMegaNeRFScalableConstruction2022}
+Turki, H., Ramanan, D., and Satyanarayanan, M. (2022).
+\newblock Mega-{{NeRF}}: {{Scalable Construction}} of {{Large-Scale NeRFs}} for {{Virtual Fly- Throughs}}.
+\newblock In {\em 2022 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 12912--12921. {IEEE}.
+
+\bibitem[Wang et~al., 2021]{wangIBRNetLearningMultiView2021}
+Wang, Q., Wang, Z., Genova, K., Srinivasan, P., Zhou, H., Barron, J.~T., Martin-Brualla, R., Snavely, N., and Funkhouser, T. (2021).
+\newblock {{IBRNet}}: {{Learning Multi-View Image-Based Rendering}}.
+\newblock In {\em 2021 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 4688--4697. {IEEE}.
+
+\bibitem[Westoby et~al., 2012]{westobyStructurefromMotionPhotogrammetryLowcost2012}
+Westoby, M., Brasington, J., Glasser, N., Hambrey, M., and Reynolds, J. (2012).
+\newblock ‘{{Structure-from-Motion}}’ photogrammetry: {{A}} low-cost, effective tool for geoscience applications.
+\newblock 179:300--314.
+
+\bibitem[Xu et~al., 2022]{xuPointNeRFPointbasedNeural2022}
+Xu, Q., Xu, Z., Philip, J., Bi, S., Shu, Z., Sunkavalli, K., and Neumann, U. (2022).
+\newblock Point-{{NeRF}}: {{Point-based Neural Radiance Fields}}.
+\newblock In {\em 2022 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}, pages 5428--5438. {IEEE}.
+
+\bibitem[Yao et~al., 2018]{yaoMVSNetDepthInference2018}
+Yao, Y., Luo, Z., Li, S., Fang, T., and Quan, L. (2018).
+\newblock {{MVSNet}}: {{Depth Inference}} for {{Unstructured Multi-view Stereo}}.
+\newblock In Ferrari, V., Hebert, M., Sminchisescu, C., and Weiss, Y., editors, {\em Computer {{Vision}} – {{ECCV}} 2018}, volume 11212, pages 785--801. {Springer International Publishing}.
+
+\bibitem[Yu et~al., 2021]{yuPlenoxelsRadianceFields2021}
+Yu, A., Fridovich-Keil, S., Tancik, M., Chen, Q., Recht, B., and Kanazawa, A. (2021).
+\newblock Plenoxels: {{Radiance Fields}} without {{Neural Networks}}.
+
+\bibitem[Zhang et~al., 2020]{zhangNeRFAnalyzingImproving2020}
+Zhang, K., Riegler, G., Snavely, N., and Koltun, V. (2020).
+\newblock {{NeRF}}++: {{Analyzing}} and {{Improving Neural Radiance Fields}}.
+
+\end{thebibliography}
